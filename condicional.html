@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="PT_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NÃO COMPLICA | Condicional</title>
+    <!-- JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/index.js"></script>
+    <!--JS REPETICAO EXEMPLOS-->
+    <script src="exemplos/condicional/exm1.js"></script>
+    <script src="exemplos/condicional/exm2.js"></script>
+    <script src="exemplos/condicional/exm3.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/icon" href="assets/imgs/favicon.png"/>
+    <style>
+    </style>
+</head>
+<body>
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="assets/imgs/background.png" alt="Imagem fundo azul">
+      </div>
+    </div>
+
+    <header class="header_section">
+      <div class="container-fluid">
+        <!-- NAV (BARRA) -->
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+              <span>NÃO COMPLICA</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">INÍCIO</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="condicional.html">ESTRUTURA CONDICIONAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="repeticao.html">ESTRUTURA REPETIÇÃO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vetores.html">VETORES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faleconosco.html">FALE CONOSCO</a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- IDEIA INICIAL DO SITE, INFORMAÇÕES GERAIS -->
+    <section class="service_section layout_padding">
+      <div class="container  ">
+        <div class="heading_container heading_center">
+          <br>
+          <h2>
+            Sobre a <span>ESTRUTURA CONDICIONAL</span>
+          </h2>
+          <p>
+            No quesito estruturas condicionais, podemos relembrar de algumas que foram fundamentais durante a obra do nosso trimestre, entre elas
+            o famoso "IF", "ELSE IF", "ELSE" e "SWITCH". <br> Foram fundamentais durante o aprendizado, entretanto iremos aprender um pouquinho sobre cada um
+            tendo o prazer de executar trabalhos em que utilizamos eles!
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE ESTRUTURAS -->
+    <section class="service_section layout_padding">
+      <div class="service_container">
+        <div class="container ">
+          <div class="btn-box2">
+            <a href="faleconosco.html">Tire dúvidas, fale conosco!</a>
+          </div>
+          <div class="row">
+<!-- ESTRUTURA 1 -->
+            <div class="col-md-4 ">
+              <div class="box ">
+                <div class="detail-box">
+                  <h5>[EXEMPLO-1] Cálculo de média:<br> ESTRUTURA "IF"</h5>
+                  <form>
+                    <br>
+                    <textarea readonly id="fonte1" cols="46" rows="20" spellcheck="false">
+<!-- HTML DENTRO DO SIMULADOR -->
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+	    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Estruturas SE Javascript</title>
+    <link rel="stylesheet" href="exemplos/condicional/exm1.css">
+    <script src="exemplos/condicional/exm1.js"></script>
+	</head>
+    <body>
+        <section>
+            <h2>Atividade - Cálculo média de aluno - Lógica de Programação</h2>
+            <form name="frmnotas" action="#" method="get" onsubmit="return validaFormulario()">
+                <fieldset class="cadmediaaluno"> 
+                    <legend>Entrada de Dados</legend><br>
+                    <label for="nota1">1ª - Nota:</label>
+              	    <input type="text" name="txtnota1" id="nota1"><br>
+                    <br>
+                    <label for="nota2">2ª - Nota:</label>
+                    <input type="text" name="txtnota2" id="nota2"><br>
+                    <br>
+                    <label for="nota3">3ª - Nota:</label>
+                    <input type="text" name="txtnota3" id="nota3"><br>
+                    <br>
+                    <button type="reset">Limpar</button><button type="submit">Enviar</button>
+			    </fieldset>	
+			</form>
+            </section>
+        </section>
+        <footer>Moises João Ferreira - 2024 &copy;</footer>			
+    </body>
+</html>
+
+<!-- FINALIZAÇÃO -->
+                    </textarea>
+                    <br><br>
+                    <div class="button-icons-container">
+                      <div class="circle-wrapper">
+                        <img src="assets/imgs/js.png" alt="JS Icon" class="code-icon code-js" onclick="toggleModal('jsModal1')">
+                      </div>
+                      <div class="circle-wrapper">
+                        <img src="assets/imgs/css.png" alt="CSS Icon" class="code-icon code-css" onclick="toggleModal('cssModal1')">
+                      </div>
+                      <input type="button" class="animated-button" value="Testar a página!" onclick="injectCode('fonte1', 'cssModal1', 'jsModal1');">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+<!-- ESTRUTURA 2 -->
+            <div class="col-md-4 ">
+              <div class="box ">
+                <div class="detail-box">
+                  <h5>[EXEMPLO-2] Mês 1 ao 12:<br> ESTRUTURA "CASE"</h5>
+                  <form>
+                    <br>
+                    <textarea readonly id="fonte2" cols="46" rows="20" spellcheck="false">
+<!-- HTML DENTRO DO SIMULADOR -->
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+	    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Estruturas CASO Javascript</title>
+		<link rel="stylesheet" type="text/css" href="exemplos/condicional/exm2.css">
+		<script src="exemplos/condicional/exm2.js"></script>
+	</head>
+    <body>
+        <section>
+            <h2>Atividade Mês 1 ao 12 </h2>
+            <br><br>
+            <form name="frmmes" action="#" method="get" onsubmit="return ConfiraNumero()">
+                <fieldset class="maioroumenor"> 
+                    <legend>Entrada de Dados</legend><br>
+                    <label for="mes1">Mês 1 ao 12:</label>
+              	    <input type="text" name="txtmes1" id="mes1"><br><br>
+                    <button class="btn" type="reset">Limpar</button><button class="btn" type="submit">Enviar</button>
+			    </fieldset>	
+			</form>
+            </section>
+        </section>
+        <footer>Moises Ferreira | 2024 &copy;</footer>			
+    </body>
+</html>	
+
+<!-- FINALIZAÇÃO -->
+                    </textarea>
+                    <br><br>
+                    <div class="button-icons-container">
+                      <div class="circle-wrapper">
+                        <img src="assets/imgs/js.png" alt="JS Icon" class="code-icon code-js" onclick="toggleModal('jsModal2')">
+                      </div>
+                      <div class="circle-wrapper">
+                        <img src="assets/imgs/css.png" alt="CSS Icon" class="code-icon code-css" onclick="toggleModal('cssModal2')">
+                      </div>
+                      <input type="button" class="animated-button" value="Testar a página!" onclick="injectCode('fonte2', 'cssModal2', 'jsModal2');">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+<!-- ESTRUTURA 3 -->
+            <div class="col-md-4 ">
+              <div class="box ">
+                <div class="detail-box">
+                  <h5>[EXEMPLO-3] Número maior:<br> ESTRUTURA "IF"</h5>
+                  <form>
+                    <br>
+                    <textarea readonly id="fonte3" cols="46" rows="20" spellcheck="false">
+<!-- HTML DENTRO DO SIMULADOR -->
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+	    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Estruturas SE Javascript</title>
+		<link rel="stylesheet" type="text/css" href="exemplos/condicional/exm3.css">
+		<script src="exemplos/condicional/exm3.js"></script>
+	</head>
+    <body>
+        <section>
+            <h2>Atividade número 5 </h2>
+            <br><br>
+            <form name="frmnumero" action="#" method="get" onsubmit="return ConfiraNumero()">
+                <fieldset class="maioroumenor"> 
+                    <legend>Entrada de Dados</legend><br>
+                    <label for="nota1">Número 1:</label>
+              	    <input type="text" name="txtnumero1" id="num1"><br>
+                    <br>
+                    <label for="nota2">Número 2:</label>
+                    <input type="text" name="txtnumero2" id="num2"><br>
+                    <br>
+                    <button type="reset">Limpar</button><button type="submit">Enviar</button>
+			    </fieldset>	
+			</form>
+            </section>
+        </section>
+        <footer>Moises Ferreira | 2024 &copy;</footer>			
+    </body>
+</html>
+
+<!-- FINALIZAÇÃO -->
+                    </textarea>
+                    <br><br>
+                    <div class="button-icons-container">
+                      <div class="circle-wrapper">
+                        <img src="assets/imgs/js.png" alt="JS Icon" class="code-icon code-js" onclick="toggleModal('jsModal3')">
+                      </div>
+                      <div class="circle-wrapper">
+                        <img src="assets/imgs/css.png" alt="CSS Icon" class="code-icon code-css" onclick="toggleModal('cssModal3')">
+                      </div>
+                      <input type="button" class="animated-button" value="Testar a página!" onclick="injectCode('fonte3', 'cssModal3', 'jsModal3');">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- Modal para JavaScript & CSS | EXEMPLO 1 -->
+<div id="jsModal1" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleModal('jsModal1')">Fechar</button>
+    <br>
+    <pre id="jsCode1"></pre> <!-- Área para o conteúdo do JS -->
+  </div>
+</div>
+
+<div id="cssModal1" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleModal('cssModal1')">Fechar</button>
+    <br>
+    <pre id="cssCode1"></pre> <!-- Área para o conteúdo do CSS -->
+  </div>
+</div>
+
+<!-- Modal para JavaScript & CSS | EXEMPLO 2 -->
+<div id="jsModal2" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleModal('jsModal2')">Fechar</button>
+    <br>
+    <pre id="jsCode2"></pre> <!-- Área para o conteúdo do JS -->
+  </div>
+</div>
+
+<div id="cssModal2" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleModal('cssModal2')">Fechar</button>
+    <br>
+    <pre id="cssCode2"></pre> <!-- Área para o conteúdo do CSS -->
+  </div>
+</div>
+
+<!-- Modal para JavaScript & CSS | EXEMPLO 3 -->
+<div id="jsModal3" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleModal('jsModal3')">Fechar</button>
+    <br>
+    <pre id="jsCode3"></pre> <!-- Área para o conteúdo do JS -->
+  </div>
+</div>
+
+<div id="cssModal3" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleModal('cssModal3')">Fechar</button>
+    <br>
+    <pre id="cssCode3"></pre> <!-- Área para o conteúdo do CSS -->
+  </div>
+</div>
+
+    <!-- FOOTER -->
+    <section class="footer_section">
+      <div class="container">
+        <p>
+          &copy; Todos os direitos reservados a Moises João Ferreira - TDESN 2024
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

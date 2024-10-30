@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+section {
+	margin-top:0px auto;
+}
+body{
+	background-color:blanchedalmond;
+	font-family:Arial, Helvetica, sans-serif;
+	background-size:100%;
+	
+}
+.cadnum { 
+    margin: 0 auto; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px  black;
+    border-radius: 15px;
+    background-color:wheat;
+    margin-top: 250px;
+    width: 300px;
+    height: 70px;
+}
+
+.cadnum input{
+	margin:5px auto;
+	width:100%;	 
+	padding:5px 0;
+}
+.cadnum button{
+	width:30%;
+	margin:15px 35%; 	
+	background-color:#f1f7ff;
+	font-weight:bold;
+	font-size:16px;
+	border: 1px solid black;
+	border-radius:10px ;
+	float:center;
+}
+.cadnum button:hover{
+	transform: scale(1.0);
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px black;
+    
+}
+.cadnum button:not(:hover){
+	transform: scale(1.0);
+    transition: 0.5s;
+    
+}
+label{
+	float:center;
+}
+h2 {
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:10px;
+	font-size:50px;
+	color:white;
+	text-shadow: 3px 3px black;
+}
+legend{
+	color:rgb(212, 31, 31);
+	text-align:center;
+}
